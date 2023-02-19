@@ -7,8 +7,8 @@
 }
 
 body {
-  background-color: #004000;
-  color:var(--BGCOLOR2);
+  background-color: rgb(235, 235, 235);
+  color:var(--BGCOLOR1);
   width: auto;
   height: 100vh;
   text-align: center;
@@ -236,8 +236,13 @@ li {
   justify-content: left;
   font-size: 12px;
   line-height: 3em;
-  color: var(--COLOR2);
+  color: var(--COLOR1);
   text-indent: 1rem;
+  background-color: #fff;
+  border-radius: 3px;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-top: 2px;
 }
 
 #home , #about, #library , #brainteasers , #questionbunk
@@ -248,17 +253,97 @@ li {
 }
 
 a {
-  text-decoration: none;
-  color: var(--COLOR2);
+  text-decoration: underline;
+  color: var(--COLOR1);
 }
 
 a:hover , a:focus {
-  color: aliceblue;
+  color: #00800088;
 }
 
 a:active {
   color: lime;
 }
+
+.icons {
+  width: 90%;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 96%;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figure {
+  background-color: #fff;
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top:5px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+
+}
+
+figcaption {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  font-family: cursive;
+}
+
+.cover {
+  width: 96%;
+  position: relative;
+  padding-bottom: 1rem;
+  margin-left: 2%;
+}
+
+.click {
+  background-color: var(--BGCOLOR1);
+  width: 100%;
+
+}
+
+.click:hover {
+  background-color: aquamarine;
+}
+
+.click, .links {
+  padding: 12px;
+  font-size: 1em;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.list {
+  position :absolute;
+  transform:scaleY(0);
+  transform-origin: top;
+  transition: 0.3s;
+}
+
+.newlist {
+  transform: scaleY(1);
+}
+
+.links {
+  background-color: var(--BGCOLOR2);
+  color: var(--COLOR1);
+}
+
+.links:hover {
+  background-color: aquamarine;
+  transform: scaleY(1.1);
+}
+
+  
 @media  screen and (min-width:350px) {
   li {
     font-size: 1em;
@@ -274,5 +359,72 @@ a:active {
  
   p {
     font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width:576px){
+  #home , #about, #library , #brainteasers , #questionbunk , #about {
+    font-size: 2.5rem;
+    height: fit-content;
+  }
+  .option-button {
+    background-color: transparent;
+    border: none;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .option-icon,
+  .option-icon::before,
+  .option-icon::after {
+    background-color: var(--BGCOLOR2);
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    transition: all 0.5s;
+  }
+  
+  .option-icon::before,
+  .option-icon::after {
+    content: "";
+  }
+  
+  .option-icon::before {
+    transform: translate(-20px, -12px);
+  }
+  .option-icon::after {
+    transform: translate(-20px, 12px);
+  }
+  img {
+    width: 7rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .name {
+    font-size: 4rem;
+  }
+  figcaption {
+    font-size: 1.9rem;
+  }
+}
+@media screen and (min-width:768px){
+  
+  img {
+    width: 10rem;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  .name {
+    font-size: 4rem;
+  }
+  figcaption {
+    font-size: 2.5rem;
   }
 }
