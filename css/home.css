@@ -377,11 +377,11 @@ hr {
 } 
 
 img {
-  width: 60em;
+  width: 70em;
   height: 25em;
   padding-top: 2em;
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
 }
 
 p {
@@ -409,6 +409,13 @@ p {
   color:  var(--COLOR1);
   font-size: 1rem;
 
+ }
+
+ #images {
+  margin: 0;
+  padding: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
  }
    /*-------------BUTTONS STYLINGS-----------*/
 .getstarted {
@@ -657,11 +664,10 @@ hr {
 }
 
 img {
-  min-width: 18em;
+  min-width: 20em;
   min-height: 10em;
-  padding-top: 2em;
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
 }
 
 p {
@@ -734,11 +740,10 @@ p {
   }
   
 img {
-  width: 37em;
+  width: 40em;
   height: 25em;
-  padding-top: 2em;
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
 }
 
 p {
@@ -821,8 +826,9 @@ p {
   }
 
   img {
-    width: 10rem;
+    width: 15rem;
     height: 7rem;
+    border-radius: 1em;
   }
   body {
     display: block;
@@ -892,9 +898,8 @@ p {
 /* || SMALL*/
 @media screen and (min-width:600px) {
 img {
-  width: 30em;
+  width: 33em;
   height: 22em;
-  padding-top: 2em;
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
 }
@@ -968,9 +973,8 @@ img {
     transform: translate(-10px, 8px);
   }
 img {
-  width: 60em;
+  width: 64em;
   height: 40em;
-  padding-top: 2em;
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
 }

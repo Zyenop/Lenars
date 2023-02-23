@@ -241,9 +241,10 @@ img {
 figure {
   width: 95%;
   background-color: #fff;
-  height: 100%;
+  height: 15rem;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 2rem;
 }
 
 a {

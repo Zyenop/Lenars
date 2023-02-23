@@ -8,7 +8,7 @@
 
 body {
   /* background-color:#7e84841d; */
-  background-color:var(--BGCOLOR3);
+  background-color:rgb(235, 235, 235);
   color:var(--BGCOLOR1);
   height: 100vh;
   text-align: center;
@@ -240,12 +240,13 @@ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
  
 main {
-  background-color:var(--BGCOLOR3);
+  background-color:rgb(235, 235, 235);
   width: 100%;
 }
 .general {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  background-color: #fff;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
