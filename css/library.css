@@ -390,10 +390,9 @@ figcaption {
     font-family: fantasy;
   }
 
-  .imglogo {
-    width: 12rem;
-    height: 12rem;
-    border-radius: 6rem;
+  #imglogo {
+    width: 100%;
+    height: 20%;
   }
 
   img {
