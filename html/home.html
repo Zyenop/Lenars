@@ -6,150 +6,154 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lenars</title>
   <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 <body>
   <header>
-    <section class="header-title-line">
-      <h1 class="name">LENARS'</h1>
-      <button class="option-button">
-        <div class="option-icon"></div>
-      </button>
-    </section>
-    <nav>
-      <ul>
-        <li><a id="home" href="home.html" class="navs">HOME</a></li>
-        <li><a id="library" href="library.html" class="navs">LIBRARY</a></li>
-        <li><a id="questionbunk" href="pastquestions.html" class="navs">QUESTION BUNK</a></li>
-        <li><a id="brainteasers" href="https://www.brainzilla.com"  class="navs">BRAIN TEASERS</a></li>
-        <li><a id="about" href="about.html" class="navs">ABOUT</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success mb-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html">LENARS'</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="library.html">Library</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.brainzilla.com" target="_blank">BrainTeasers</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Questionbunk
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item" href="#">WAEC Past Questions</a></li>
+                <li><a class="dropdown-item" href="#">JAMB(UTME) Past Questions</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Post-Utme Past Questions</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+          </ul>
+          <!-- <form class="d-flex">
+            <a href="signup.html">
+              <button class="btn btn-outline-light" type="button">Sign Up</button>
+            </a>
+            <a href="login.html">
+              <button class="btn btn-outline-light bg-primary mx-3" type="button">Log In</button>
+            </a>
+          </form> -->
+        </div>
+      </div>
     </nav>
     </header>
-    <section>
-     <p id="first0" class="first">Easy Learning.Better Result.</p>
-     <p id="second0" class="second">One platform for all you learning needs.</p>
-     <hr>
-    </section>
-    <div class="header2">
-      <div class="buttoncontainer1">
-      <a id="login" class="login" href="./login.html">LOG IN</a>
-      <a id="signup" class="signup" href="./signup.html"> SIGN UP</a>
+    <main class="container-fluid text-center">
+      <div class="w-100 btn btn-outline-success text-center p-3  bg-light text-muted intro container">Easy Learning.</div>
+      <div class="w-100 btn btn-outline-success text-center p-3 my-3 btn-outline-success bg-light text-muted intro container">Better Results.</div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="../images/learner.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Complete Learning App for Students</h5>
+              <p class="card-text">additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"><a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">View In App</a></small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="../images/library.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Library</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+                <a href="library.html">
+                  <button class="btn btn-outline-light bg-success" type="button">Go To Library</button>
+                </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="../images/education.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Classroom</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+              <a href="googlemeet.html">
+                <button class="btn btn-outline-light bg-success" type="button">Go to Classroom</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="../images/MuslimPro.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">MuslimPro</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+              <a href="muslimpro.html">
+                <button class="btn btn-outline-light bg-success" type="button">Explore</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="../images/bible.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Christian Pro</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+              <a href="christianpro.html">
+                <button class="btn btn-outline-light bg-success" type="button">Explore</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="../images/guider.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"><a href="guider.html" class="btn btn-success" role="button" data-bs-toggle="button">Explore</a></small>
+            </div>
+          </div>
+        </div>
       </div>
-      <hr>
-    </div>
-    <main class="general">
-      <a class="linkse" href="#">
-        <figure class="linkers"id="one">
-         <img id="images" src="../images/learner.jpg" alt="">
-      <figcaption>
-         <p id="first1" class="first">Complete learning app</p> 
-         <p id="second1" class="second">for school students</p> 
-         <p id="third1" class="third">Explore  &gt;&gt;&gt;</p> 
-        </figcaption>
-     </figure>
-    </a>
-      <a class="linkse" href="library.html">
-        <figure class="linkers" id="two">
-        <img id="images" src="../images/library.jpg" alt="">
-      <figcaption>
-         <p id="first2"  class="first"> LIBRARY</p>
-         <p id="second2" class="second"> Check out books to read</p>
-         <p id="third2"  class="third"> Explore &gt; &gt; &gt;</p>
-        </figcaption>
-     </figure>
-    </a>
-     <a class="linkse" href="https://www.brainzilla.com">
-      <figure class="linkers" id="three">
-        <img id="images" src="../images/brainzilla-logo-menu.webp" alt="">
-      <figcaption>
-        <p id="first3"  class="first"> BRAIN TEASERS</p>
-         <p id="second3" class="second"> Let get sparked!!</p>
-         <p id="third3" class="third"> Explore &gt; &gt; &gt;</p>
-      </figcaption>
-     </figure>
-    </a>
-    <a class="linkse" href="pastquestions.html">
-     <figure class="linkers" id="four">
-      <img id="images" src="../images/pastquestions.jpg" alt="">
-      <figcaption>
-       
-        <p id="first4" class="first"> QUESTIONS BUNK</p>
-        <p id="second4" class="second">Test your capability</p>
-        <p id="third4" class="third">Explore &gt; &gt; &gt;</p>
-      </figcaption>
-     </figure>
-    </a>
-    <a class="linkse" href="https://www.codecademy.com">
-     <figure class="linkers" id="five">
-      <img id="images" src="../images/coding.jpg" alt="">
-      <figcaption>
-        <p id="first5" class="first">CODING CLASSES</p>
-         <p id="second5" class="second"> Let's code!!</p>
-         <p id="third5" class="third"> Explore &gt; &gt; &gt;</p>
-      </figcaption>
-     </figure>
-    </a>
-    <a class="linkse" href="../html/meet.html">
-     <figure class="linkers" id="five">
-      <img id="images" src="../images/ancient-buddha-buddhism-svgrepo-com.svg" alt="">
-      <figcaption>
-        <p id="first5" class="first"> ONLINE CLASS</p>
-         <p id="second5" class="second"> Let's LEARN!!</p>
-         <p id="third5" class="third"> Explore &gt; &gt; &gt;</p>
-      </figcaption>
-     </figure>
-    </a>
-    <a class="linkse" href="muslimpro.html">
-     <figure class="linkers" id="six">
-      <img id="images" src="../images/MuslimPro.png" alt="">
-      <figcaption>
-        <p id="first6" class="first">MUSLIM PRO</p>
-         <p id="second6"  class="second"> 
-          <em>
-            Islam,<q>a complete religion</q>
-          </em>
-        </p>
-         <p id="third6" class="third"> Explore &gt; &gt; &gt;</p>
-      </figcaption>
-     </figure>
-    </a>
-    <a class="linkse" href="https://wwww.thoughts-about-god.com">
-     <figure class="linkers" id="seven">
-      <img id="images" src="../images/bible.jpg" alt="">
-      <figcaption>
-        <p id="first7" class="first">CHRISTIAN PRO</p>
-        <p id="second7" class="second"> Jesus is lord.</p>
-        <p id="third7" class="third"> Explore &gt; &gt; &gt;</p>
-      </figcaption>
-     </figure>
-    </a>
-     <a class="linkse" href="guider.html">
-      <figure class="linkers" id="eight">
-       <img id="images" src="../images/guider.jpg" alt="">
-       <figcaption>
-        <p id="first8" class="first">THE GUIDER</p>
-        <p id="second8" class="second"> Let's guide you on the path of effective learning.</p>
-        <!-- <p id="third8" class="third"> Explore &gt; &gt; &gt;</p> -->
-       </figcaption>
-      </figure>
-     </a>
-     <!-- <button class="getstarted">
-      GET STARTED &gt; &gt; &gt;
-     </button> -->
+      <p id="backtotop">
+        <a class="backtotop" href="#">
+          Back To Top
+        </a>
+      </p> 
+    </main>
+    <footer class="footer0 bg-dark text-light">
+    CONTACTS:&copy; <br>
+    TEL:+234 1234567890 <br>
+    TEL:+234 1234567890<br>
+    FACEBOOK: LENARS' COMMUNITY <br>
+    TWITTER : LERNAS' COMMUNITY <br>
+    INSTAGRAM : LENARS'   MEDIA <br>
+    </footer>
 
-    <p id="backtotop">
-      <a class="backtotop" href="#">
-        Back To Top
-      </a>
-    </p> 
-  </main>
-  <footer class="footer0">
-   CONTACTS:&copy; <br>
-   TEL:+234 1234567890 <br>
-   TEL:+234 1234567890<br>
-   FACEBOOK: LENARS' COMMUNITY <br>
-   TWITTER : LERNAS' COMMUNITY <br>
-   INSTAGRAM : LENARS'   MEDIA <br>
-  </footer>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>

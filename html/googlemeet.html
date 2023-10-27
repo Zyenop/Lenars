@@ -6,38 +6,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Class</title>
   <link rel="stylesheet" href="../css/googlemeet.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 <body>
   <header>
-    <section class="header-title-line">
-      <h1 class="name">LENARS'</h1>
-      <button class="option-button">
-        <div class="option-icon"></div>
-      </button>
-    </section>
-    <nav>
-      <ul>
-        <li><a id="home" href="home.html" class="navs">HOME</a></li>
-        <li><a id="library" href="library.html" class="navs">LIBRARY</a></li>
-        <li><a id="questionbunk" href="pastquestions.html" class="navs">QUESTION BUNK</a></li>
-        <li><a id="brainteasers" href="https://www.brainzilla.com"  class="navs">BRAIN TEASERS</a></li>
-        <li><a id="about" href="about.html" class="navs">ABOUT</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success mb-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html">LENARS'</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="library.html">Library</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Questionbunk
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <a href="signup.html">
+              <button class="btn btn-outline-light" type="button">Sign Up</button>
+            </a>
+            <a href="login.html">
+              <button class="btn btn-outline-light bg-primary mx-3" type="button">Log In</button>
+            </a>
+          </form>
+        </div>
+      </div>
     </nav>
     </header>
+  
     <section class="header-title-bar">
       <a href="../html/library.html"><button class="back">&lt;</button></a>
    </section>
   <main>
   <div class="container">
     <div>
-      <img class="class" src="../images/ivan-aleksic-PDRFeeDniCk-unsplash.jpg" alt="">
+      <img class="class" src="../images/computer-screen-monitor-svgrepo-com.svg" alt="">
     </div>
     <div>
-     <a href="https://meet.google.com/video/">
-      <button id="class">
+     <a href="https://meet.google.com/" type="button" class="btn btn-success btn-shadow btn-outline-light">
         Click to host or join class 
-      </button>
     </a>
 </div>
 
@@ -48,5 +73,7 @@
 </div>
 </div>
 </main>
+
+<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>

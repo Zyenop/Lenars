@@ -5,32 +5,47 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lenars</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="../css/library.css">
 </head>
 <body>
   <header>
-    <section class="header-title-line">
-      <h1 class="name">LENARS'</h1>
-      <button class="option-button">
-        <div class="option-icon"></div>
-      </button>
-    </section>
-    <nav>
-      <ul>
-        <li><a id="home" href="home.html" class="navs">HOME</a></li>
-        <li><a id="library" href="library.html" class="navs">LIBRARY</a></li>
-        <li><a id="questionbunk" href="pastquestions.html" class="navs">QUESTION BUNK</a></li>
-        <li><a id="brainteasers" href="https://www.brainzilla.com"  class="navs">BRAIN TEASERS</a></li>
-        <li><a id="about" href="about.html" class="navs">ABOUT</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success mb-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html">LENARS'</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto bg-success my-2 my-lg-0" style="--bs-scroll-height: 100px;">
+            <li class="nav-item border-light">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="library.html">Library</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.brainzilla.com" target="_blank">BrainTeasers</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Questionbunk
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
     </header>
-      <section class="logo">
-        <img id="imglogo" src="../images/library.jpg" alt="Lenars' Logo">
-      </section>
-      <section class="name" id="lib">
-        LIBRARY
-      </section>
         <section class="name">
         <div class="header2">
           <h2>WELCOME TO THE LIBRARY!</h2>
@@ -46,56 +61,106 @@
     </q>
     <ul>
   </section>
-  <main class="general">
-    <a href="../html/sciencebooks.html">
-      <figure id="linkers" class="one">
-      <img src="../images/science.jpg" alt="">
-      <figcaption>Science TextBooks</figcaption>
-     </figure>
-    </a>
-    <a href="../html/businessbooks.html">
-     <figure id="linkers" class="two">
-        <img src="../images/business.jpg" alt="">
-      <figcaption>Business TextBooks</figcaption>
-     </figure>
-    </a>
-    <a href="../html/humanitiesbooks.html">
-      <figure id="linkers" class="three">
-        <img src="../images/arthouse.jpg" alt="">
-      <figcaption>Humanities TextBooks</figcaption>
-     </figure>
-    </a>
-    <a href="../html/psychologicalbooks.html">
-     <figure id="linkers" class="four">
-        <img src="../images/cred-svgrepo-com.svg" alt="">
-      <figcaption>Psychological Books</figcaption>
-     </figure>
-    </a>
-    <a href="../html/dictionaries.html">
-     <figure id="linkers" class="four">
-        <img src="../images/questionmark.jpg" alt="">
-        <figcaption>Dictionary</figcaption>
-     </figure>
-    </a>
-    <a href="../html/novels.html">
-     <figure id="linkers" class="five">
-      <img src="../images/books-svgrepo-com.svg" alt="">
-      <figcaption>Novels</figcaption>
-     </figure>
-    </a>
-    <a href="../html/searchhouse.html">
-     <figure id="linkers" class="six">
-      <img src="../images/wifi.jpg" alt="">
-      <figcaption>Search House</figcaption>
-     </figure>
-    </a>
-    <a href="../html/googlemeet.html">
-     <figure id="linkers" class="seven">
-      <img src="../images/ancient-buddha-buddhism-svgrepo-com.svg" alt="">
-      <figcaption>Lenars' Online Class</figcaption>
-     </figure>
-    </a>
+  <main>
+    <div class="general">
+      <a href="../html/sciencebooks.html">
+        <figure id="linkers" class="one">
+        <img src="../images/science.jpg" alt="">
+        <figcaption>Science TextBooks</figcaption>
+      </figure>
+      </a>
+      <a href="../html/businessbooks.html">
+      <figure id="linkers" class="two">
+          <img src="../images/business.jpg" alt="">
+        <figcaption>Business TextBooks</figcaption>
+      </figure>
+      </a>
+      <a href="../html/humanitiesbooks.html">
+        <figure id="linkers" class="three">
+          <img src="../images/arthouse.jpg" alt="">
+        <figcaption>Humanities TextBooks</figcaption>
+      </figure>
+      </a>
+      <a href="../html/psychologicalbooks.html">
+      <figure id="linkers" class="four">
+          <img src="../images/cred-svgrepo-com.svg" alt="">
+        <figcaption>Psychological Books</figcaption>
+      </figure>
+      </a>
+      <a href="../html/dictionary.html">
+      <figure id="linkers" class="four">
+          <img src="../images/questionmark.jpg" alt="">
+          <figcaption>Dictionary</figcaption>
+      </figure>
+      </a>
+      <a href="../html/novel.html">
+      <figure id="linkers" class="five">
+        <img src="../images/books-svgrepo-com.svg" alt="">
+        <figcaption>Novels</figcaption>
+      </figure>
+      </a>
+      <a href="../html/searchhouse.html">
+      <figure id="linkers" class="six">
+        <img src="../images/wifi.jpg" alt="">
+        <figcaption>Search House</figcaption>
+      </figure>
+      </a>
+      <a href="../html/googlemeet.html">
+      <figure id="linkers" class="seven">
+        <img src="../images/wifi.jpg" alt="">
+        <figcaption>Lenars' Online Class</figcaption>
+      </figure>
+      </a>
+    </div>
+
+    <div id="todo-app-container">
+      <div class="todo-app">
+        <div class="todo-app-header">
+          <div class="task-input">
+            <input type="text" class="todo-input" id="js-todo-input">
+            
+            <div class="period-input">
+              <input type="time" class="time-input period" id="js-time-input">
+              <input type="date" class="date-input period" id="js-date-input">
+            </div>
+          </div>
+
+          <div class="submit">
+            <button type="submit" class="submit-btn">ADD TODO</button>
+          </div>
+        </div>
+
+        <div class="task-list" id="task-list">
+          <div class="task-slide" id="js-task-slide">
+            <div class="checker">
+              <!-- <img src="" alt=""> -->
+            </div>
+            <input type="text" class="task" id="js-task" value="Read Chemistry" readonly>
+            
+            <div class="actions" id="js-actions">
+              <div class="action">EDIT</div>
+              <div class="action">DELETE</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="suggestion-box">
+      <div class="container">
+        <h2 class="suggest">Give us a feedback here</h2>
+        <textarea id="textarea" class="textarea" placeholder="Please write your text here...." maxlength="150"></textarea>
+        <div class="counter-container">
+         <p>Total Character: <span class="total-charset" id="total-charset">0</span> </p>
+         <p>Remaining: <span class="remaining-charset" id="remaining-charset">0</span> </p>
+        </div>
+        <button type="submit" class="send-btn">SEND</button>
+       </div>
+    </div>
   </main>
+
   <!-- <section>
     <button class="getstarted">
       GET STARTED &gt; &gt; &gt;
@@ -104,5 +169,8 @@
   <footer class="footer0">
 
   </footer>
+
+  <script src="../js/library.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
